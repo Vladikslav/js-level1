@@ -95,10 +95,6 @@ window.onload = () => {
     userNameInput.addEventListener('invalid',function(evt) {
         if(userNameInput.validity.tooShort) {
             userNameInput.setCustomValidity('Имя должно быть из 2-х символов');
-            console.log(1);
-        }
-        else {
-            console.log(2);
         }
     });
     document.querySelector('.wizard-coat').addEventListener('click', function () {
